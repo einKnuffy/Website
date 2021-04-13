@@ -1,0 +1,57 @@
+* {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-image: url(./img/static/background.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.header{
+    font-family: 'Dancing Script', cursive;
+    padding: 7.5% 0;
+    font-size: 4.35rem;
+    animation: items-intro 1.5s linear 0s 1 both;
+    -webkit-animation: items-intro 1.5s linear 0s 1 both;
+}
+
+@keyframes items-intro{
+    0%{
+        opacity: 0;
+        filter: blur(20px);
+        -webkit-filter: blur(20px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+}
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid white;
+    border-left: transparent;
+    border-right: transparent;
+    animation: items-intro 1s linear 0.5s 1 both;
+    -webkit-animation: items-intro 1s linear 1s 1 both;
+}
