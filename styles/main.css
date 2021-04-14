@@ -38,20 +38,6 @@ html{
     text-align: center;
 }
 
-.navbar{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 auto;
-    padding: 10px 0px;
-    border-bottom: 2px solid white;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.125));
-
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
-}
-
 .header{
     font-family: 'Dancing Script', cursive;
     padding: 7.5% 0;
