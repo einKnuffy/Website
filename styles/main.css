@@ -42,10 +42,18 @@ html{
 }
 
 .navbar{
+    position: sticky;
+    top: 0%;
     display: flex;
+    overflow: hidden;
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     border-bottom: 2px solid white;
-    padding: 5px 0px;
+    width: 100%;
+}
+
+.navbar-items a{
+    float: left;
+    display: block;
 }
 
 .header{
