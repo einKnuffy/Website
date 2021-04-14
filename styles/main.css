@@ -37,6 +37,8 @@ html{
     font-family: 'Dancing Script', cursive;
     text-shadow: 0px 0px 15px black;
     text-align: center;
+    animation: items-anim 1.5s linear 0s 1 both;
+    -webkit-animation: items-anim 1.5s linear 0s 1 both;
 }
 
 .navbar{
@@ -44,31 +46,26 @@ html{
     background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     border-bottom: 2px solid white;
     padding: 5px 0px;
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
 }
 
 .header{
     margin-top: 3%;
     font-size: 4.35rem;
-
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
 }
 
 .slogan{
     font-size: 2.35rem;
-
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
 }
 
-.main--text{
+.header--text{
     margin-top: 10%;
-    font-size: 1.25rem;
+    font-size: 2rem;
+}
 
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
+.scrolldown{
+    margin-top: 5%;
+    animation: scrolldown 2s linear 2s infinite both;
+    -webkit-animation: scrolldown 2s linear 2s infinite both;
 }
 
 @keyframes items-anim{
@@ -81,5 +78,29 @@ html{
         opacity: 1;
         filter: blur(0px);
         -webkit-filter: blur(0px);
+    }
+}
+
+@keyframes scrolldown{
+    0%, 50%, 100%{
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(0, 10%);
+        -webkit-transform: translate(0, 10%);
+        -moz-transform: translate(0, 10%);
+        -ms-transform: translate(0, 10%);
+        -o-transform: translate(0, 10%);
+    }
+    75%{
+        transform: translate(0, -10%);
+        -webkit-transform: translate(0, -10%);
+        -moz-transform: translate(0, -10%);
+        -ms-transform: translate(0, -10%);
+        -o-transform: translate(0, -10%);
     }
 }
