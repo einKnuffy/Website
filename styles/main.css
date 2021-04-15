@@ -37,8 +37,8 @@ html{
     font-family: 'Dancing Script', cursive;
     text-shadow: 0px 0px 15px black;
     text-align: center;
-    animation: items-anim 1.5s linear 0s 1 both;
-    -webkit-animation: items-anim 1.5s linear 0s 1 both;
+    animation: items-anim 1s linear 0s 1 both;
+    -webkit-animation: items-anim 1s linear 0s 1 both;
 }
 
 .navbar{
@@ -66,7 +66,7 @@ html{
 }
 
 .scrolldown{
-    margin-top: 5%;
+    margin: 5% auto 110px auto;
     animation: scrolldown 2s linear 2s infinite both;
     -webkit-animation: scrolldown 2s linear 2s infinite both;
 }
@@ -76,13 +76,36 @@ html{
     border-top: 2px solid rgba(255, 255, 255,0.9);
 }
 
-.main--body--heading{
+.body--heading{
     font-size: 3rem;
     margin: 25px auto 75px auto;
 }
 
-.main--body--text{
+.body--text{
     font-size: 2rem;
+}
+
+.body--slideshow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 125px auto 0px auto;
+}
+
+.slideshow--slides{
+    flex: 1 1 auto;
+    width: 300px;
+    margin: 100px;
+}
+
+.slideshow--slides:hover{
+    animation: slideshow-anim 2s;
+    -webkit-animation: slideshow-anim 2s;
+}
+
+.slide-2{
+    width: 600px;
 }
 
 @keyframes items-anim{
@@ -120,4 +143,9 @@ html{
         -ms-transform: translate(0, -10%);
         -o-transform: translate(0, -10%);
     }
+}
+
+@keyframes slideshow-anim{
+    0%, 100%{ filter: blur(0px) ; -webkit-filter: blur(0px) ; }
+    50%{ filter: blur(5px) ; -webkit-filter: blur(5px) ; }
 }
