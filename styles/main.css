@@ -78,30 +78,46 @@ html{
 }
 
 .body--heading{
-    font-size: 3rem;
-    margin: 40px auto 75px auto;
+    font-size: 5rem;
+    margin: 100px auto 75px auto;
 }
 
 .body--text{
-    font-size: 2rem;
+    font-size: 3.25rem;
+    margin-bottom: 150px;
 }
 
 .body--showcase{
-    display: flex;
-    margin-top: 300px;
+    margin: 150px 0px;
+}
+
+.showcase--heading{
+    font-size: 3.5rem;
+    margin-bottom: 50px;
 }
 
 .showcase--row{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.showcase--row{
+.showcase--cols{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px;
+}
+
+.showcase--icon{
+    margin-bottom: 10px;
+}
+
+.showcase--text{
+    margin-top: 10px;
+    font-size: 3rem;
 }
 
 @keyframes items-anim{
