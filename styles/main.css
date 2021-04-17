@@ -142,6 +142,18 @@ progress{
     height: 30px;
 }
 
+input, button{
+    margin-top: 200px;
+    margin-bottom: 50px;
+    width: 50%;
+    background-color: transparent;
+    text-align: center;
+}
+
+#text{
+    margin-top: 0px;
+}
+
 @keyframes items-anim{
     0%{
         opacity: 0;
