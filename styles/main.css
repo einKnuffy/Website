@@ -139,6 +139,7 @@ html{
 
 progress{
     width: 50%;
+    height: 30px;
 }
 
 @keyframes items-anim{
