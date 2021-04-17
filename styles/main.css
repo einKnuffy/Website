@@ -140,19 +140,21 @@ html{
 progress{
     width: 50%;
     height: 30px;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
-input, button{
-    margin-top: 200px;
-    margin-bottom: 50px;
-    width: 50%;
-    background-color: transparent;
-    text-align: center;
+progress::-webkit-progress-bar {
+    height: 20px;
+    background-color: #232943;
+    border-radius: 100px;
 }
 
-#text{
-    margin-top: 0px;
+progress::-webkit-progress-value{
+    background: linear-gradient(90deg, transparent, rgb(255, 255, 255) 50%);
+    border-radius: 100px;
 }
+
 
 @keyframes items-anim{
     0%{
