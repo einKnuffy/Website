@@ -47,7 +47,6 @@ html{
     position: sticky;
     padding: 0.5rem 0rem;
     display: flex;
-    overflow: hidden;
     background: linear-gradient(0deg, rgba(35, 41, 67, 0.6), rgba(35, 41, 67, 0.6));
     border-bottom: 0.1rem solid white;
     width: 100%;
