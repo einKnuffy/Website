@@ -160,6 +160,26 @@ progress::-webkit-progress-value{
     -o-border-radius: 5rem;
 }
 
+@media (max-width: 600px){
+    .header{
+        font-size: 5.5rem;
+    }
+    .scrolldown{
+        margin: 4rem auto 3rem auto;
+    }
+    .showcase--row{
+        display: initial;
+    }
+    .showcase--cols{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 400px){
+    *{
+        font-size: 17.5px;
+    }
+}
 
 @keyframes items-anim{
     0%{
