@@ -4,7 +4,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    width: 100%;
 }
 
 html{
@@ -36,7 +35,7 @@ html{
 .container{
     color: white;
     font-family: 'Dancing Script', cursive;
-    text-shadow: 0rem 0rem 0,75rem black;
+    text-shadow: 0rem 0rem 0.75rem black;
     text-align: center;
     animation: items-anim 1s linear 0s 1 both;
     -webkit-animation: items-anim 1s linear 0s 1 both;
@@ -44,18 +43,21 @@ html{
 }
 
 .navbar{
-    top: 0%;
-    position: sticky;
-    padding: 0.5rem 0rem;
+    position: fixed;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
     background: linear-gradient(0deg, rgba(35, 41, 67, 0.6), rgba(35, 41, 67, 0.6));
-    border-bottom: 0.1rem solid white;
-    width: 100%;
+    border-bottom: 1px solid white;
 }
 
 .navbar-items{
-    float: left;
-    display: block;
+    flex: 1 1 auto;
+    padding: 0.25rem 0rem;
 }
 
 .header{
