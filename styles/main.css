@@ -7,11 +7,10 @@
 }
 
 html{
-    background-image: url(./img/static/background.jpg);
+    background-image: linear-gradient(#232943,rgba(0, 217, 255, 0.5), #232943), url(./img/static/background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 ::-webkit-scrollbar{
